@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.2.0](https://github.com/jousmo/node-js-fh/compare/v0.1.0...v0.2.0) (2021-10-19)
+
+
+### Features
+
+* review javascript fundamentals ([3a3f558](https://github.com/jousmo/node-js-fh/commit/3a3f558b94ec0b60f3f08fee265916ae80da0c66))
+
 ## 0.1.0 (2021-10-19)
 
 
