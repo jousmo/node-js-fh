@@ -1,0 +1,44 @@
+{
+  "name": "node-js-fh",
+  "version": "0.0.0",
+  "description": "Udemy Course Node JS - Fernando Herrera",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon",
+    "test": "echo 'No test specified'",
+    "lint": "eslint . --fix && echo '✔   Your .js files look good'",
+    "release": "standard-version",
+    "release:minor": "standard-version --release-as minor",
+    "release:patch": "standard-version --release-as patch",
+    "release:major": "standard-version --release-as major",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jousmo/node-js-fh.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jousmo/node-js-fh/issues"
+  },
+  "author": "José Uscanga <jousmo@outlook.com>",
+  "license": "MIT",
+  "keywords": [
+    "NodeJS"
+  ],
+  "devDependencies": {
+    "@commitlint/cli": "^13.2.1",
+    "@commitlint/config-conventional": "^13.2.0",
+    "eslint": "^8.0.1",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.0",
+    "husky": "^7.0.2",
+    "nodemon": "^2.0.13",
+    "standard-version": "^9.3.2"
+  },
+  "engines": {
+    "node": "~14.18.0"
+  }
+}
