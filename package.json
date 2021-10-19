@@ -1,6 +1,6 @@
 {
   "name": "node-js-fh",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Udemy Course Node JS - Fernando Herrera",
   "main": "index.js",
   "scripts": {
