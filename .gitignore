@@ -218,3 +218,5 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+# Directories specified App
+03-bases-node/output/*.txt
