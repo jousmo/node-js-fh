@@ -1,11 +1,11 @@
 const fs = require('fs')
 const colors = require('colors/safe')
 
-const crearArchivo = (base = 5, list) => {
+const crearArchivo = ({ base = 5, list = false, hasta = 10 }) => {
   return new Promise((resolve, reject) => {
     let salida = ''
 
-    for (let i = 1; i <= 10; i++) {
+    for (let i = 1; i <= hasta; i++) {
       salida += `${base} x ${i} = ${base * i}\n`
     }
 

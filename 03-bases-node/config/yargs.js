@@ -15,12 +15,24 @@ module.exports = yargs(hideBin(process.argv))
       default: false,
       type: 'boolean',
       describe: 'Muestra la lista en consola'
+    },
+    h: {
+      alias: 'hasta',
+      demandOption: false,
+      default: 10,
+      type: 'number',
+      describe: 'Limite de multiplicados'
     }
   })
   .check(argv => {
     if (isNaN(argv?.base)) {
       throw new Error('La --base debe ser un numero')
     }
+
+    if (isNaN(argv?.hasta)) {
+      throw new Error('La --hasta debe ser un numero')
+    }
+
     return true
   })
   .argv

@@ -1,8 +1,8 @@
 const argv = require('./config/yargs')
 const { crearArchivo } = require('./helpers/multiplicar')
 
-const { base = 5, list } = argv
+const { base, list, hasta } = argv
 
-crearArchivo(base, list)
+crearArchivo({ base, list, hasta })
   .then(console.log)
   .catch(console.error)
