@@ -9,7 +9,7 @@ const crearArchivo = ({ base = 5, list = false, hasta = 10 }) => {
       salida += `${base} x ${i} = ${base * i}\n`
     }
 
-    fs.writeFile(`tabla-${base}.txt`, salida, err => {
+    fs.writeFile(`./output/tabla-${base}.txt`, salida, err => {
       if (err) reject(err)
 
       if (list) {
