@@ -1,9 +1,9 @@
+const yargs = require('yargs/yargs')
+const { hideBin } = require('yargs/helpers')
+
+const argv = yargs(hideBin(process.argv)).argv
+const { base = 5 } = argv
 const { crearArchivo } = require('./helpers/multiplicar')
-
-console.clear()
-
-const [, , arg3 = 'base=5'] = process.argv
-const [, base = 5] = arg3.split('=')
 
 crearArchivo(base)
   .then(console.log)
