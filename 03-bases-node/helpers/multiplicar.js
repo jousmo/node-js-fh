@@ -1,4 +1,5 @@
 const fs = require('fs')
+const colors = require('colors/safe')
 
 const crearArchivo = (base = 5, list) => {
   return new Promise((resolve, reject) => {
@@ -12,10 +13,10 @@ const crearArchivo = (base = 5, list) => {
       if (err) reject(err)
 
       if (list) {
-        console.log('====================')
-        console.log(`   Tabla del ${base}`)
-        console.log('====================')
-        console.log(salida)
+        console.log(colors.green('===================='))
+        console.log(colors.blue(`   Tabla del ${base}`))
+        console.log(colors.green('===================='))
+        console.log(colors.magenta(salida))
       }
 
       resolve(`Se creo el archivo: tabla-${base}.txt`)
